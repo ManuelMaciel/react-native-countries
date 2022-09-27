@@ -124,7 +124,7 @@ export const CountrySelector = ({
         const lowerCaseSearchValue = searchValue.toLowerCase();
 
         return codes.filter((country) => {
-            if (country?.common_name[lang].toLowerCase().includes(lowerCaseSearchValue)) {
+            if (country?.common_name[lang || 'en'].toLowerCase().includes(lowerCaseSearchValue)) {
                 return country;
             }
         });
@@ -160,8 +160,8 @@ export const CountrySelector = ({
     };
 
     const renderItem = ({item, index}: { item: ICountry, index: number }) => {
-        let itemName = item?.common_name[lang];
-        let checkName = itemName.length ? itemName : item?.common_name[lang];
+        let itemName = item?.common_name[lang || 'en'];
+        let checkName = itemName.length ? itemName : item?.common_name[lang || 'en'];
 
         return (
             <ItemTemplate
