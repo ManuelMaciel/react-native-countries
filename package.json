@@ -1,5 +1,5 @@
 {
-  "name": "react-native-countries",
+  "name": "react-native-countries-sel",
   "version": "1.0.3",
   "description": "This package provides a country selector with a search engine.",
   "main": "lib/index.js",

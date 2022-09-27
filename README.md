@@ -11,7 +11,7 @@ This package provides a country selector with a search engine.
 # Basic usage
 
 ```JS
-import { CountrySelector } from "react-native-countries";
+import { CountrySelector } from "react-native-countries-sel";
 
 export default function App() {
   const [show, setShow] = useState(false);
